@@ -1,0 +1,1 @@
+$q = $db->query("SELECT count(*), boo_lname, boo_bfrom, boo_tob, boo_id  FROM booking GROUP BY boo_lname HAVING COUNT(*) > 1 AND boo_status != 'COMPLETED'
